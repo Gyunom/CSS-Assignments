@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main container with the purple background */
+.main-container {
+    background-color: #a9a6d1;
+    border-radius: 12px;
+    padding: 100px;
+    width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container */
+.card-container {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: 16px;
+    left: 80px;
+    background-color: #ffe082;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Image */
+.card-image {
+    background-color: #e6e6e6;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Card Content */
+.card-content {
+    padding: 24px;
+    text-align: center;
+}
+
+/* Apply bold styles to all text except "Series IV" */
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.series {
+    font-size: 14px;
+    font-weight: normal; /* Keep "Series IV" non-bold */
+    color: #555;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #1a1919;
+    line-height: 1.6;
+    font-weight: bold; /* Explicitly make description bold */
+    margin-top: 12px;
+}

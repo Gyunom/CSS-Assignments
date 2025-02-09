@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1280px;
+    background-color: #f0f0f0;
+}
+
+/* Top Section Styles */
+.top-section {
+    background: #ffffff;
+    padding: 96px 64px;  /* Increased padding to match the bottom section */
+    position: relative;
+}
+
+/* Header content aligned consistently */
+.header-content {
+    max-width: 800px;
+    margin: auto;
+    padding-left: 48px;
+}
+
+/* Left-aligned text */
+.header-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.header-subtitle,
+.header-text {
+    text-align: left;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.highlight {
+    color: #00b894;
+}
+
+/* Avatar positioning */
+.avatar-container {
+    position: absolute;
+    right: 64px;
+    top: 64px;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-left: -12px;
+    border: 2px solid #ffffff;
+}
+
+/* Bottom Section Styles */
+.bottom-section {
+    background: #504e4e;
+    padding: 96px 64px;  /* Matching padding with the top section */
+}
+
+.content-card {
+    position: relative;
+    background: #ffffff;
+    padding: 48px;
+    border-radius: 4px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Yellow Header Adjustments */
+.content-header {
+    position: absolute;
+    top: -20px;
+    left: 48px;
+    background: #ffc107;
+    color: #000;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.content-body {
+    padding-top: 40px;
+}
+
+.content-text {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.content-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    }
+
+    .header-content {
+        padding-left: 32px;  /* Adjust padding for smaller screens */
+    }
+
+    .content-header {
+        left: 32px;
+    }
+
+    .avatar-container {
+        top: 48px;
+        right: 48px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-section,
+    .bottom-section {
+        padding: 48px 24px;
+    }
+
+    .header-content {
+        padding-left: 24px;
+    }
+
+    .content-header {
+        left: 24px;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .content-body {
+        padding-top: 24px;
+    }
+}

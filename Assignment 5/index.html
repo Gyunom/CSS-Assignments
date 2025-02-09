@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Pusher Checkout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="logo.png" alt="WP Pusher"></a>
+            <div class="nav-links">
+                <a href="#">Download</a>
+                <a href="#">Learn more</a>
+                <a href="#">Pricing</a>
+                <a href="#">Help</a>
+                <a href="#">Account</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+           <div class="container">
+        <section class="checkout">
+            <h1>Checkout</h1>
+            <div class="form-section">
+                <h2 class="heading-tick">Your Basic Information</h2>
+                <form>
+                    <div class="form-group half-width" id="first-name-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Jane">
+                    </div>
+                    <div class="form-group half-width" id="last-name-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Doe">
+                    </div>
+                    <div class="form-group full-width" id="email-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="janedoe@example.com">
+                    </div>
+                </form>
+            </div>
+            <div class="form-section">
+                <h2 class="heading-tick">Your Payment Information</h2>
+                <form>
+                    <div class="form-group full-width" id="payment info">
+                        <label for="card-number">Credit Card</label>
+                        <div class="input-group">
+                            <input type="text" id="card-number" placeholder="Card Number" class="full-width">
+                            <input type="text" id="expiry-date" placeholder="MM/YY" class="short-width">
+                            <input type="text" id="cvc" placeholder="CVC" class="short-width">
+                        </div>
+                    </div>
+                </form>
+                <button class="btn-primary">Buy WP Pusher</button>
+                <p class="help-text">Need any help? Don't hesitate to <a href="contact">contact support</a>!</p>
+                <p class="powered">Powered by <strong>Stripe</strong></p>
+            </div>
+        </section>
+            <section class="plan-info">
+                <h4>Freelancer</h4>
+                <p class="price">
+                    <span class="dollars">$</span>
+                    <span class="price-value">99</span>
+                    <span class="price-duration">/ year</span>
+                    <p class="small-text" style="font-style: italic;">Automatically renews after 1 year</p>
+                </p>
+                
+                <div class="pricingCircle" style="width: 100%; height: auto;">
+                    <ul class="custom-list">
+                        <li>Use on 5 client sites</li>
+                        <li>Private repositories</li>
+                        <li>Email support</li>
+                    </ul>
+                </div>
+               
+                <p class="small-text">Need 20 client sites?</p>
+                <p class="agency-switch"><a href="#">Switch to the Agency plan.</a></p>
+                <div class="FTP" style="width: 100%; height: auto;">
+                    <p class="testimonial">"FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!"</p>
+                </div>
+                <div class="profile-container">
+                    <div class="circle-container">
+                        <img src="PNG IMG.png" alt="img" class="IMG">
+                    </div>
+                    <strong style="font-style: italic;">Kirk Beard</strong>
+                </div>
+               
+            </section>
+            <div class="copyright">
+                <p>© 2018 WP Pusher IVS  ·  Terms of Service</p>
+            </div>
+        </div>
+        
+    </main>
+</html>

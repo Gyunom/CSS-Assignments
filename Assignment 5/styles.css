@@ -1,0 +1,431 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "lato", sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #fafdff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 960px;
+    flex-wrap: wrap; 
+}
+
+.checkout, .plan-info {
+    background: white;
+    padding: 20px;
+    border-radius: opx;
+    line-height: 0.8;
+    
+}
+
+.checkout {
+    flex: 1 0 58%;  
+    padding: 20px;
+    margin-right: 2%; 
+    background: white;
+    border-radius: 8px;
+}
+
+.plan-info {
+    width: 35%;
+    background: #0072C6;
+    color: white;
+    margin-top: 0px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    line-height: 5;
+    padding-left: 50px;
+}
+
+.plan-info .price {
+    display: flex;
+    align-items: baseline;
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.custom-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff9f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f0f0;
+}
+
+.dollars {
+    color: #fff8f8;
+    font-size: 1.2rem;
+    font-weight: normal;
+    transform: translateY(-20px);
+}
+.plan-info .price-value {
+    color: #ffffff;
+    margin-right: 0.5rem;
+}
+
+.plan-info .price-duration {
+    color: #fff8f8;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-right: 5.5rem;
+}
+.pricingCircle {
+    margin-top: 20px; 
+    padding-top: 20px; 
+}
+.plan-info canvas {
+    margin-bottom: 1rem;
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.circle-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2); 
+}
+
+.small-text {
+    font-size: 0.8em;
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 16px;
+}
+p.agency-switch a {
+    color: #ffffff; /* Specific color */
+    text-decoration: underline; /* Example decoration */
+}
+.FTP .testimonial {
+    color: #ffffff;
+    margin-right: 0.5rem;
+    line-height: 0.8;
+    font-size: 18px;
+    font-style: italic;
+}
+.IMG {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.checkout h1 {
+    text-indent: 20px;
+    border-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+    line-height: 2;    
+}
+
+.form-section h2 {
+    text-indent: 50px;
+    border-top: 2px solid#ebeaea;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-size: 15px;
+}
+.heading-tick {
+    position: relative; 
+    padding-left: 18px; 
+    display: flex; 
+    align-items: center; 
+    min-height: 30px; 
+}
+
+.heading-tick::before {
+    content: ""; 
+    position: absolute; 
+    left: 40; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #1179BF; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    margin-left: 15px; 
+}
+.heading-tick::after {
+    content: "\2713"; 
+    position: absolute; 
+    left: 40; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 14px; 
+    color: #1179BF; 
+    line-height: 20px;  
+    margin-left: -10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.form-group {
+    margin-bottom: 10px;
+    line-height: 2;
+    float: left;
+}
+
+.form-group {
+    box-sizing: border-box;  
+    padding: 0 15px; 
+    margin-bottom: 10px; 
+    line-height: 1,.5px;
+}
+
+.half-width {
+    float: left; 
+    width: 50%; 
+}
+
+.full-width {
+    clear: both; 
+    width: 100%; 
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; /* Ensures inputs take up the full width of their container */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:#EDEFF2;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between; /* Distributes space between children */
+    width: 100%; /* Full width of the parent container */
+}
+
+.input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 2px; /* Provides a small margin around each input for visual separation */
+}
+
+.full-width {
+    flex: 3; /* Allows this field to take more space, adjusting as necessary */
+}
+
+.short-width {
+    flex: 1; /* Limits the growth of these fields, keeping them shorter */
+}
+
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; /* Ensures inputs take up full width of the form section */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    background: #038E7D; /* Teal background */
+    color: white; /* White text */
+    border: none; /* No border around the button */
+    border-radius: 5px;
+    padding: 10px 15px; /* Padding inside the button */
+    margin-top: 140px; /* Space above the button for the pseudo-element border */
+    cursor: pointer; /* Indicates the area is clickable */
+    display: block; /* Makes the button block-level to occupy the full width */
+    width: 100%; /* Full width */
+    line-height: 1.5; /* Centers text vertically */
+    box-sizing: border-box; /* Padding and border included in width/height */
+}
+
+.btn-primary::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    left: 0;
+    top: -10px; /* Position it 10px above the button */
+    width: 100%; /* Same width as the button */
+    height: 2px; /* Height of the border */
+    background-color: #ccc; /* Color of the border */
+}
+
+.help-text {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 30px;
+    margin: 20px 0;
+    margin-left: 100px;
+ }
+ 
+ .help-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1179BF;
+    border-radius: 50%;
+    margin-left: -20px;
+ }
+ 
+ .help-text::after {
+    content: "?";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    color: #1179BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -18px;
+ }
+.powered {
+    background-color: #9c9999; /* Dark gray background */
+    color: white; /* White text color */
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 30px;
+    border-radius: 4px; /* Rounded corners for the background */
+    font-size: 0.9em; /* Text size, keeping it the same as before */
+    display: block; /* Block display to take the full width available within its container */
+    width: fit-content; /* Width to fit the content's natural size */
+    line-height: 1; /* Normal line height for the text */
+    padding: 10px 20px; /* Padding around the text, increase as needed */
+    
+}
+.copyright {
+    font-size: 0.8em;
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 16px;
+    margin-left: 330px;
+    align-self: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    .checkout, .plan-info {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .plan-info {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .powered, .copyright {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .help-text {
+        margin-left: 50px;
+    }
+
+    .help-text::before,
+    .help-text::after {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-group {
+        padding: 0 10px;
+    }
+
+    .btn-primary {
+        margin-top: 70px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .powered {
+        width: 100%; /* Take full width to ensure centering on mobile */
+        padding: 10px; /* Adjust padding if necessary for mobile layout */
+    }
+}
