@@ -18,15 +18,26 @@ header {
 }
 
 nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap; 
+}
 .nav-links a {
-    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px 15px; 
     text-decoration: none;
-    padding: 0 10px;
+    color: black;
+    font-size: 14px; 
 }
 
 .container {
@@ -34,7 +45,8 @@ nav {
     justify-content: space-between;
     margin: 20px auto;
     max-width: 960px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 15px;
 }
 
 .checkout, .plan-info {
@@ -46,7 +58,7 @@ nav {
 }
 
 .checkout {
-    flex: 1 0 58%;  
+    flex: 1 1 580px;  
     padding: 20px;
     margin-right: 2%; 
     background: white;
@@ -54,7 +66,7 @@ nav {
 }
 
 .plan-info {
-    width: 35%;
+    flex: 1 1 350px; 
     background: #0072C6;
     color: white;
     margin-top: 0px;
@@ -64,6 +76,7 @@ nav {
     align-items: left;
     line-height: 5;
     padding-left: 50px;
+    min-width: 300px; 
 }
 
 .plan-info .price {
@@ -156,8 +169,8 @@ nav {
     font-size: 16px;
 }
 p.agency-switch a {
-    color: #ffffff; /* Specific color */
-    text-decoration: underline; /* Example decoration */
+    color: #ffffff; 
+    text-decoration: underline; 
 }
 .FTP .testimonial {
     color: #ffffff;
@@ -233,13 +246,15 @@ p.agency-switch a {
 .form-group {
     box-sizing: border-box;  
     padding: 0 15px; 
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    width: 100%; 
     line-height: 1,.5px;
+
 }
 
 .half-width {
-    float: left; 
-    width: 50%; 
+    float: none; 
+    width: 100%; 
 }
 
 .full-width {
@@ -248,38 +263,38 @@ p.agency-switch a {
 }
 
 .form-group input, .form-group select, .form-group textarea {
-    width: 100%; /* Ensures inputs take up the full width of their container */
+    width: 100%; 
     padding: 8px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: -50px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color:#EDEFF2;
 }
 .input-group {
     display: flex;
-    justify-content: space-between; /* Distributes space between children */
-    width: 100%; /* Full width of the parent container */
+    justify-content: space-between;
+    width: 100%; 
 }
 
 .input-group input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin: 2px; /* Provides a small margin around each input for visual separation */
+    margin: 2px; 
 }
 
 .full-width {
-    flex: 3; /* Allows this field to take more space, adjusting as necessary */
+    flex: 3; 
 }
 
 .short-width {
-    flex: 1; /* Limits the growth of these fields, keeping them shorter */
+    flex: 1; 
 }
 
 
 .form-group input, .form-group select, .form-group textarea {
-    width: 100%; /* Ensures inputs take up full width of the form section */
+    width: 100%; 
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -287,28 +302,28 @@ p.agency-switch a {
 }
 
 .btn-primary {
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
-    background: #038E7D; /* Teal background */
-    color: white; /* White text */
-    border: none; /* No border around the button */
+    position: relative; 
+    background: #038E7D; 
+    color: white; 
+    border: none; 
     border-radius: 5px;
-    padding: 10px 15px; /* Padding inside the button */
-    margin-top: 140px; /* Space above the button for the pseudo-element border */
-    cursor: pointer; /* Indicates the area is clickable */
-    display: block; /* Makes the button block-level to occupy the full width */
-    width: 100%; /* Full width */
-    line-height: 1.5; /* Centers text vertically */
-    box-sizing: border-box; /* Padding and border included in width/height */
+    padding: 10px 15px; 
+    margin-top: 140px; 
+    cursor: pointer; 
+    display: block; 
+    width: 100%; 
+    line-height: 1.5; 
+    box-sizing: border-box; 
 }
 
 .btn-primary::before {
-    content: ""; /* Required for pseudo-elements */
+    content: ""; 
     position: absolute;
     left: 0;
-    top: -10px; /* Position it 10px above the button */
-    width: 100%; /* Same width as the button */
-    height: 2px; /* Height of the border */
-    background-color: #ccc; /* Color of the border */
+    top: -10px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #ccc; 
 }
 
 .help-text {
@@ -330,6 +345,7 @@ p.agency-switch a {
     border: 2px solid #1179BF;
     border-radius: 50%;
     margin-left: -20px;
+    margin-top: -5px;
  }
  
  .help-text::after {
@@ -343,19 +359,20 @@ p.agency-switch a {
     align-items: center;
     justify-content: center;
     margin-left: -18px;
+    margin-top: -5px;
  }
 .powered {
-    background-color: #9c9999; /* Dark gray background */
-    color: white; /* White text color */
+    background-color: #9c9999; 
+    color: white; 
     text-align: center;
     margin-left: 200px;
     margin-top: 30px;
-    border-radius: 4px; /* Rounded corners for the background */
-    font-size: 0.9em; /* Text size, keeping it the same as before */
-    display: block; /* Block display to take the full width available within its container */
-    width: fit-content; /* Width to fit the content's natural size */
-    line-height: 1; /* Normal line height for the text */
-    padding: 10px 20px; /* Padding around the text, increase as needed */
+    border-radius: 4px; 
+    font-size: 0.9em; 
+    display: block; 
+    width: fit-content; 
+    line-height: 1; 
+    padding: 10px 20px; 
     
 }
 .copyright {
@@ -368,64 +385,137 @@ p.agency-switch a {
     font-size: 14px;
 }
 
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 95%;
-        margin: 10px auto;
+
+
+/* Media Queries for responsiveness */
+
+/* For tablets  */
+@media (max-width: 1024px) {
+    header {
+        padding: 10px; 
     }
-    
+
+    .container {
+        flex-direction: column;
+        margin: 10px; 
+    }
+
     .checkout, .plan-info {
-        width: 100%;
-        margin: 10px 0;
+        flex: 1 1 100%; 
+        margin: 10px 0; 
     }
 
     .plan-info {
-        margin-left: 0;
+        padding: 15px; 
+        
     }
-}
 
-@media screen and (max-width: 768px) {
     .input-group {
+        flex-direction: column; 
+    }
+
+
+    .profile-container, .help-text {
         flex-direction: column;
+        align-items: center; 
+        text-align: left;
+        margin-top: 10px; 
+        margin-left: 50px
     }
 
-    .input-group input {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    .powered, .copyright {
-        margin-left: 0;
+   .powered, .copyright {
+        width: auto; 
+        margin: 10px auto; 
         text-align: center;
     }
-
-    .help-text {
-        margin-left: 50px;
+    .circle-container{
+        width: auto; 
+        margin: 10px auto;
+        text-align: left;
+        margin-left: -50px;
     }
-
-    .help-text::before,
-    .help-text::after {
-        left: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .form-group {
-        padding: 0 10px;
+    .name {
+        width: auto; 
+        margin: 10px auto; 
+        text-align: left;
+        margin-left: -50px; 
+        margin-top: -20px;
     }
 
     .btn-primary {
-        margin-top: 70px;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
+        margin-top: 20px; 
     }
 }
+
+/* For mobile devices - targets devices with max width up to 768px */
 @media (max-width: 768px) {
-    .powered {
-        width: 100%; /* Take full width to ensure centering on mobile */
-        padding: 10px; /* Adjust padding if necessary for mobile layout */
+    body, .small-text {
+        font-size: 14px; 
+    }
+
+    header, .form-group, .input-group input, .btn-primary, .help-text {
+        padding: 8px; 
+    }
+
+    .logo {
+        width: 1px;  
+        margin-bottom: 10px;
+    }
+
+    .nav , .nav-links, .nav-links a {
+        font-size: 12px;
+        flex-direction: row ;
+        margin-top: 30px;
+        margin-right: 10px;
+        padding: 0px 10px; 
+    }
+    .checkout, .plan-info {
+        padding: 10px; 
+    }
+
+    .nav-links a {
+        display: block; 
+    }
+
+    .custom-list li {
+        font-size: 14px; 
+    }
+
+    .custom-list li::before {
+        width: 12px; 
+        height: 12px;
+    }
+
+    .plan-info .price {
+        font-size: 2rem; 
+    }
+
+    .powered, .copyright {
+        padding: 5px 10px; 
+    }
+}
+
+/* Additional rules for very small screens */
+@media (max-width: 480px) {
+    header, nav {
+        padding: 5px; 
+    }
+
+    .nav-links a {
+        font-size: 12px; 
+    }
+
+    .form-section h2, .heading-tick {
+        padding: 5px; 
+        font-size: 14px; 
+    }
+
+    .input-group {
+        margin-bottom: 15px; 
+    }
+
+    .btn-primary {
+        font-size: 14px; 
+        padding: 10px 10px; 
     }
 }

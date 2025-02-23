@@ -19,21 +19,20 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Top Section Styles */
 .top-section {
     background: #ffffff;
-    padding: 96px 64px;  /* Increased padding to match the bottom section */
+    width: 1280px;
+    height: 382px;
+    padding: 96px 64px;  
     position: relative;
 }
 
-/* Header content aligned consistently */
 .header-content {
     max-width: 800px;
     margin: auto;
     padding-left: 48px;
 }
 
-/* Left-aligned text */
 .header-title {
     font-size: 32px;
     font-weight: bold;
@@ -52,31 +51,11 @@ body {
     color: #00b894;
 }
 
-/* Avatar positioning */
-.avatar-container {
-    position: absolute;
-    right: 64px;
-    top: 64px;
-}
-
-.avatar-group {
-    display: flex;
-    align-items: center;
-}
-
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #ccc;
-    margin-left: -12px;
-    border: 2px solid #ffffff;
-}
-
-/* Bottom Section Styles */
 .bottom-section {
     background: #504e4e;
-    padding: 96px 64px;  /* Matching padding with the top section */
+    width: 1280px;
+    height: 450px;
+    padding: 96px 64px;
 }
 
 .content-card {
@@ -88,18 +67,18 @@ body {
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Yellow Header Adjustments */
 .content-header {
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: 48px;
     background: #ffc107;
     color: #000;
     padding: 12px 24px;
+    margin-left: -50px;
     font-weight: bold;
     border-radius: 4px;
     font-size: 20px;
+    border-bottom: 7px solid#d8ae2f;
 }
 
 .content-body {
@@ -112,57 +91,76 @@ body {
     line-height: 1.6;
     margin-bottom: 24px;
 }
+.content-text1 {
+    color: #333;
+    margin-top: -30px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
 
 .content-text:last-child {
     margin-bottom: 0;
 }
 
-/* Responsive Styles */
 
-/* Tablet */
-@media (max-width: 1024px) {
-    .container {
-        width: 768px;
-    }
-
-    .header-content {
-        padding-left: 32px;  /* Adjust padding for smaller screens */
-    }
-
-    .content-header {
-        left: 32px;
-    }
-
-    .avatar-container {
-        top: 48px;
-        right: 48px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-    .container {
+/* tablet */
+@media (max-width: 768px) {
+    .container,
+    .top-section,
+    .bottom-section,
+    .content-card {
         width: 100%;
     }
-
+    .content-card {
+        width: 700px;
+        margin-left: -50px;
+        margin-top: -60px;
+    }
+    .header-content,
+    .content-header {
+        padding: 20px 32px;
+    }
+    .content-text1 {
+        padding: 20px 0px;
+    }
+}
+/* mobile */
+@media (max-width: 390px) {
     .top-section,
     .bottom-section {
-        padding: 48px 24px;
+        padding: 48px 16px;
     }
+    .bottom-section {
+        margin-top: 20px;
+    }
+    .content-card {
+        width: 348px;
+        margin-top: 5px;
+        margin-left: -15px;
+    }
+    .header-content,
+    .content-text {
+        padding: 20px 16px;
+    }
+    .content-text1 {
+        padding: 20px 16px;
+}
 
-    .header-content {
-        padding-left: 24px;
-    }
 
     .content-header {
-        left: 24px;
+        width: 300px;
+        height: 75px;
+        font-size: 18px;
+        /* left: 10px; */
     }
 
     .header-title {
         font-size: 24px;
+        text-align: left;
     }
 
     .content-body {
-        padding-top: 24px;
+        padding-top: 16px;
     }
 }

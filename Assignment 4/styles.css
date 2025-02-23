@@ -2,53 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'sofia pro', sans-serif;
 }
 
 body {
-    background-color: #eaeaea;
+    background-color:  #F7FDFC;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    
 }
-
+.transparent {
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    flex-direction: column;
+    padding: 0; 
+}
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
     max-width: 1200px;
-    background-color: transparent; /* Ensure the main container has no background */
+    height: 679;
+    background-color: transparent; 
     border-radius: 0px;
-    box-shadow: none; /* Remove box shadow from the main container */
-    padding: 0; /* Remove padding from main container */
+    box-shadow: 20px; 
+    padding: 0; 
+    
 }
 
 .header {
     text-align: left;
     width: 100%;
-    background-color: #eaeaea; /* Set a background for desktop view */
-    padding: 20px 40px; /* Add padding for the header content */
+    padding: 20px 40px;
+    font-size: 14px; 
 }
 
 .logo {
     max-width: 100px;
-    margin-top: 150px;  /* This large margin is pushing the logo down in mobile view */
+    margin-top: 150px;  
     margin-bottom: 20px;
 }
 
 .form-container {
     width: 100%;
-    background-color: #ffffff; /* White background for the form only */
-    padding: 20px 40px; /* Padding around the form */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow to elevate the form */
-    border-radius: 8px; /* Rounded corners for the form container */
+    background-color: #ffffff; 
+    padding: 20px 40px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
 }
 
 .form-group {
     margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-hw {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group1 {
+    flex: 1;
+    font-size: 14px; 
+} 
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 60%;  
+    transform: translateY(-20%);  
+    cursor: pointer;
+    color: #666;
+    z-index: 10;
+}
+
+.form-group input[type="password"] {
+    padding-right: 45px;
     width: 100%;
 }
 
@@ -78,11 +120,21 @@ button:hover {
 }
 
 .terms {
+    
     text-align: center;
     margin-top: 20px;
+    font-size: 14px;
+}
+.terms2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .terms a {
+    color: #00b894;
+}
+.terms2 a {
     color: #00b894;
 }
 
@@ -91,7 +143,7 @@ button:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 20px; /* Padding for desktop */
+        padding: 20px; 
     }
 
     .header, .form-container {
@@ -99,18 +151,50 @@ button:hover {
     }
 
     .header {
-        background-color: transparent; /* Transparent background on desktop */
+        background-color: transparent; 
+    }
+    .form-hw {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .terms {
+        display: block;
+    }
+    .terms2 {
+        display: none;
+    }
+    .form-hw {
+        flex-direction: row; 
+        gap: 15px;
+         
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .header {
-        background-color: #eaeaea; /* Ensure header has distinct background on mobile */
         width: 100%;
         padding: 20px;
     }
     .logo {
-        margin-top: 0px; /* No top margin for mobile */
+        margin-top: 0px; 
+    }
+    
+    .terms {
+        margin-top: 10px;
+    }
+    .terms {
+        display: none;
+    }
+    .terms2 {
+        display: block;
+        margin-left: -30px;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .form-hw {
+        flex-direction: column; 
+        gap: 15px;
+         
+    }
+}
